@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom';
+import ArticlePage from './components/ArticlePage';
+import articles from './components/data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <ul>
+            {articles.map((article) => (
+              <li key={article.id}>
+                <Link to={`/article/${article.id}`}>{article.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/article/:id"
+            element={<ArticleWrapper />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
+const Home = () => (
+  <div>
+    <h1>Welcome to the Article Site</h1>
+    <p>Select an article to read.</p>
+  </div>
+);
+
+const ArticleWrapper = () => {
+  const { id } = useParams();
+  const article = articles.find((a) => a.id === parseInt(id));
+  return article ? <ArticlePage {...article} /> : <h2>Article not found</h2>;
+};
 
 export default App;
