@@ -1,18 +1,14 @@
 import React from 'react';
-import MetaTags from './Meta';
+import ArticlePage from './ArticlePage';
 
-function Article2() {
+const Article2 = () => {
   return (
-    <div>
-      <MetaTags
-        title="Article 2 Title"
-        description="This is the description for Article 2."
-        image={`${process.env.PUBLIC_URL}/img/article2.jpg`}
-      />
-      <h1>Article 2</h1>
-      <p>This is the content for Article 2...</p>
-    </div>
+    <ArticlePage
+      title="Article 2 Title"
+      description="This is the description for Article 2."
+      image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tjRYQMoESNuQZhoyI4ZqdrgWCy_Wv8rkXlWc-OR402RAiB-ql0xtNEwJpA&s"
+    />
   );
-}
+};
 
 export default Article2;

@@ -1,0 +1,31 @@
+.home-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .home-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .home-page ul li {
+    margin: 15px 0;
+  }
+  
+  .home-page ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #007bff;
+  }
+  
+  .home-page ul li a:hover {
+    text-decoration: underline;
+  }
+  

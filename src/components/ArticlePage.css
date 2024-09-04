@@ -1,40 +1,21 @@
 .article-page {
-    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
   }
   
-  .article-image {
+  .article-content img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
   
-  h1 {
-    font-size: 2rem;
+  .article-content h1 {
+    font-size: 2em;
     margin-bottom: 10px;
   }
   
-  p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-bottom: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
+  .article-content p {
+    font-size: 1.2em;
   }
   
