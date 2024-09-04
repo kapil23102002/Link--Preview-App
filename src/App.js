@@ -1,31 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import ArticlePage from './components/ArticlePage';
+import { useParams } from 'react-router-dom';
 import articles from './components/data';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <nav>
-          <ul>
-            {articles.map((article) => (
-              <li key={article.id}>
-                <Link to={`/article/${article.id}`}>{article.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+    <HelmetProvider>
+      <Router>
+        <div className="App">
+          <nav>
+            <ul>
+              {articles.map((article) => (
+                <li key={article.id}>
+                  <Link to={`/article/${article.id}`}>{article.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/article/:id"
-            element={<ArticleWrapper />}
-          />
-        </Routes>
-      </div>
-    </Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/article/:id"
+              element={<ArticleWrapper />}
+            />
+          </Routes>
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 
