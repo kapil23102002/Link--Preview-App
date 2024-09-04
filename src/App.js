@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import ArticlePage from './components/ArticlePage';
 import { useParams } from 'react-router-dom';
