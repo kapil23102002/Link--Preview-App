@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/article1"
+            path="/Link--Preview-App/article1"
             element={
               <Article
                 title="Article 1"
@@ -44,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/article2"
+            path="/Link--Preview-App/article2"
             element={
               <Article
                 title="Article 2"
@@ -54,7 +54,7 @@ function App() {
             }
           />
           <Route
-            path="/article3"
+            path="/Link--Preview-App/article3"
             element={
               <Article
                 title="Article 3"
@@ -64,7 +64,7 @@ function App() {
             }
           />
           <Route
-            path="/article4"
+            path="/Link--Preview-App/article4"
             element={
               <Article
                 title="Article 4"
@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/article5"
+            path="/Link--Preview-App/article5"
             element={
               <Article
                 title="Article 5"
