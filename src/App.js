@@ -17,16 +17,16 @@ function App() {
           <Link style={styles.link} to="/article1">
             Article 1
           </Link>
-          <Link style={styles.link} to="/article2">
+          <Link style={styles.link} to="/link-preview-app/article2">
             Article 2
           </Link>
-          <Link style={styles.link} to="/article3">
+          <Link style={styles.link} to="/link-preview-app/article3">
             Article 3
           </Link>
-          <Link style={styles.link} to="/article4">
+          <Link style={styles.link} to="/link-preview-app/article4">
             Article 4
           </Link>
-          <Link style={styles.link} to="/article5">
+          <Link style={styles.link} to="/link-preview-app/article5">
             Article 5
           </Link>
         </nav>
@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/Link--Preview-App/article1"
+            path="/link-preview-app/article1"
             element={
               <Article
                 title="Article 1"
@@ -44,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article2"
+            path="/link-preview-app/article2"
             element={
               <Article
                 title="Article 2"
@@ -54,7 +54,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article3"
+            path="/link-preview-app/article3"
             element={
               <Article
                 title="Article 3"
@@ -64,7 +64,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article4"
+            path="/link-preview-app/article4"
             element={
               <Article
                 title="Article 4"
@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article5"
+            path="/link-preview-app/article5"
             element={
               <Article
                 title="Article 5"
