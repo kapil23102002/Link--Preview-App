@@ -14,19 +14,19 @@ function App() {
           <Link style={styles.link} to="/">
             Home
           </Link>
-          <Link style={styles.link} to="/article1">
+          <Link style={styles.link} to="/Link--Preview-App/article1">
             Article 1
           </Link>
-          <Link style={styles.link} to="/link-preview-app/article2">
+          <Link style={styles.link} to="/Link--Preview-App/article2">
             Article 2
           </Link>
-          <Link style={styles.link} to="/link-preview-app/article3">
+          <Link style={styles.link} to="/Link--Preview-App/article3">
             Article 3
           </Link>
-          <Link style={styles.link} to="/link-preview-app/article4">
+          <Link style={styles.link} to="/Link--Preview-App/article4">
             Article 4
           </Link>
-          <Link style={styles.link} to="/link-preview-app/article5">
+          <Link style={styles.link} to="/Link--Preview-App/article5">
             Article 5
           </Link>
         </nav>
@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/link-preview-app/article1"
+            path="/Link-Preview-App/article1"
             element={
               <Article
                 title="Article 1"
@@ -44,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/link-preview-app/article2"
+            path="/Link--Preview-App/article2"
             element={
               <Article
                 title="Article 2"
@@ -54,7 +54,7 @@ function App() {
             }
           />
           <Route
-            path="/link-preview-app/article3"
+            path="/Link--Preview-App/article3"
             element={
               <Article
                 title="Article 3"
@@ -64,7 +64,7 @@ function App() {
             }
           />
           <Route
-            path="/link-preview-app/article4"
+            path="/Link--Preview-App/article4"
             element={
               <Article
                 title="Article 4"
@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/link-preview-app/article5"
+            path="/Link--Preview-App/article5"
             element={
               <Article
                 title="Article 5"
