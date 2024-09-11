@@ -54,11 +54,11 @@
     },
     "routes": [
       "/",
-      "/article1",
-      "/article2",
-      "/article3",
-      "/article4",
-      "/article5"
+      "/Link--Preview-App/article1",
+      "/Link--Preview-App/article2",
+      "/Link--Preview-App/article3",
+      "/Link--Preview-App/article4",
+      "/Link--Preview-App/article5"
     ],
     "waitUntil": "load"
   }
