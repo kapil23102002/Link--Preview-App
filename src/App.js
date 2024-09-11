@@ -11,7 +11,7 @@ function App() {
     <HelmetProvider>
       <div>
         <nav style={styles.nav}>
-          <Link style={styles.link} to="/">
+          <Link style={styles.link} to="/Link--Preview-App">
             Home
           </Link>
           <Link style={styles.link} to="/Link--Preview-App/article1">
@@ -32,9 +32,9 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Link--Preview-App" element={<Home />} />
           <Route
-            path="/Link-Preview-App/article1"
+            path="/Link--Preview-App/article1"
             element={
               <Article
                 title="Article 1"
